@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Acerca de{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+<div class="row"> 
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/avatar.jpg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Angel Flores Casimiro</h2>   
+        <p>"Chilango de corazón, toluqueño por adopción. Estudié en la UAEMex, UPVM y hasta en USA, pero ahora mi alma máter es la #UTVT. 🎓🔥 #PuroToluca"</p>
+        <p>11 años en enterprise systems (COBOL, Java, mainframes). Ahora mi stack es educativo: Python para lógica, JavaScript para creatividad, y algo de SQL para organizar ideas. Siempre compilando conocimiento.</p>
+    </div>
+</div>
+{% endblock %}
